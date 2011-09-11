@@ -4,3 +4,5 @@ body { background: url("/images/noisy.png") top left repeat }
 
 #logo { position: absolute; width: 500px; height: 350px; top: 50%; left: 50%; margin-left: -250px; margin-top: -200px; }
 
+#footer { position:absolute; bottom:20px; text-align:center; width:100% }
+#footer a { color: #999; }
