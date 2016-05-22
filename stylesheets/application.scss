@@ -6,7 +6,20 @@
 // slate #30373B;
 
 html, body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #444;
+  font-weight: 400;
+  line-height:1.7em;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin-bottom: 25px;
+  line-height:1.7em;
+}
+
+body { background: #f5f6f7 }
+
+section {
+  margin: 30px 0;
 }
 
 #content {
@@ -19,4 +32,107 @@ html, body {
 
 }
 
-.navbar-brand { color: #fff;}
+.navbar-brand { color: #fff; letter-spacing: 1px}
+
+.snippet {
+  padding: 10px;
+  color: #333;
+  background: #e0e0e0;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  font-family: "Courier", monospace
+}
+
+.screenshot {
+  margin: 20px auto;
+  text-align:center;
+}
+
+/* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+  .sidebar-nav {
+    margin-top: 20px;
+    .navbar {
+      background:none;
+      border:none;
+      border-right: 1px solid #ddd;
+
+    }
+  }
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+
+table.pricing-table {
+  border: border-collapse;
+  margin: 10px 0;
+  font-size: 13px;
+  td {
+    width: 20%; 
+    text-align:center;
+    vertical-align:middle !important;
+    border: 1px solid #ddd;
+    color: #777;
+    .plan-price {
+      font-size: 24px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .feature {
+      color: #468847;
+    }
+  }
+  
+  td:first-child, th:first-child {
+    text-align:left;   
+    width: 40%; 
+  }
+  th { 
+    border: 1px solid #ddd;
+    background: #f5f6f7;
+    text-align:center;
+    vertical-align:middle !important;
+  }
+  th.divider {
+    padding: 10px;
+    text-align:left;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000;    
+    text-transform: uppercase;
+  }
+}
+
+.gallery {
+  li { 
+    cursor: pointer; 
+    margin-bottom: 10px;
+
+    .thumbnail {
+      margin-bottom: 2px;
+    }
+    font-size: 13px; color: #aaa;
+  }
+}
+
+.modal-dialog {
+  width: 70%;
+}
