@@ -23,11 +23,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Storesmiths</a>
+        <a class="navbar-brand" href="/" style='color:#EFEFEF'>STORESMITHS</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="/product_reviews">Product Reviews</a></li>
+          <li><a href="/product_reviews">Product Reviews</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -35,7 +35,23 @@
 
 
   <div class='container' id='content'>  
-    {{ content }}
+    <div class='row'>
+      <div class='col-sm-12'>
+        <h2>{{ page.title }}</h2>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col-sm-8'>
+        {{ content }}
+      </div>
+      <div class='col-sm-4'>
+        <div class='well well-sm'>
+         <h4>Documentation</h4>
+          {% include docs.html %}
+        </div>
+      </div>
+    </div>
   </div>
 
   <script type="text/javascript">

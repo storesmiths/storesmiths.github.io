@@ -1,0 +1,37 @@
+---
+layout: docs
+title: Setup & Installation
+widget_snippet: '<div class="sspr-reviews" data-id="{{product.id}}">{{ product.metafields.sspr }}</div>'
+badge_snippet: '<div class='sspr-badge' data-id="{{ product.id }}"></div>'
+---
+
+<section>
+  <h4>Installing the Reviews Widget snippet</h4>
+
+  <p>Copy and paste the following code snippet into your <strong>product.liquid</strong> template file. This will enable the reviews to be displayed on your product page.</p>
+
+  <div class='snippet'>{{ page.widget_snippet | escape | markdownify }}</div>
+
+
+  <p>You should now see the reviews widget added to your product page similar to the screenshot below.</p>
+
+  <img class='screenshot thumbnail' src="/images/reviews_widget.png" width=420/>
+</section>
+
+
+<section>
+  <h4>Installing the Reviews Badge</h4>
+
+  <p>You can add a reviews badge to each product in a collection by adding the following snippet to <strong>collection.liquid</strong> template file (as well as any other liquid file that uses collections).</p>
+
+  <div class='snippet'>{{ page.badge_snippet | escape | markdownify }}</div>
+
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section>
+
